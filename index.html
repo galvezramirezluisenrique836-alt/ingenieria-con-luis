@@ -67,6 +67,11 @@ p{margin:0}
 .feat li{padding-left:18px;position:relative}
 .feat li::before{content:"";position:absolute;left:0;top:.62em;width:9px;height:2px;background:var(--accent)}
 .prod-title{font-size:clamp(2.4rem,9vw,3.8rem)}
+.products a.yt{grid-column:1/-1;flex-direction:row;align-items:center;gap:12px;border-color:#B3261E}
+.products a.yt:hover{border-color:#FF5A4F}
+.products a.yt svg{width:34px;height:34px;flex:none;color:#FF3B30}
+.products a.yt .ytt{display:flex;flex-direction:column;gap:2px;color:var(--text)}
+.products a.yt .ytt span{color:var(--muted)}
 /* portada */
 .hero{display:grid;gap:32px;padding:36px 0 48px}
 .hero-copy{display:flex;flex-direction:column;gap:18px}
@@ -304,6 +309,7 @@ h1 .w{display:inline-block;animation:rise .7s cubic-bezier(.2,.8,.2,1) both;anim
   <nav class="products" aria-label="Productos">
     <a href="#auditor"><b>Auditor APU Smart</b><span>S/ 149</span></a>
     <a href="#metrados"><b>Metrados Smart</b><span>S/ 45</span></a>
+    <a class="yt" href="https://www.youtube.com/@LuisEnriqueGalvezRamirez" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4" fill="currentColor"/><path d="M10 9l5 3-5 3z" fill="#0A1A30"/></svg><span class="ytt"><b>Mi canal de YouTube</b><span>Tutoriales de costos, metrados y APU</span></span></a>
   </nav>
 
   <div class="hero" id="auditor">
@@ -535,7 +541,7 @@ h1 .w{display:inline-block;animation:rise .7s cubic-bezier(.2,.8,.2,1) both;anim
 </section>
 
 <footer>
-  <div class="wrap">Ingeniería con Luis</div>
+  <div class="wrap">Ingeniería con Luis · <a href="https://www.youtube.com/@LuisEnriqueGalvezRamirez" target="_blank" rel="noopener">Canal de YouTube</a></div>
 </footer>
 
 <div class="bar">
